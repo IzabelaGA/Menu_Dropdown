@@ -47,6 +47,7 @@ body {
 
 #navbar h1 a {
     color: var(--primary-color);
+    transition: .4s;
 }
 
 #navbar h1 a:hover {
@@ -58,16 +59,7 @@ body {
     display: inline-block;
     padding: 1rem;
     position: relative;
-}
-
-#navbar ul.main li a {
-    color: var(--text-secondary);
-    text-decoration: none;
-}
-
-/* Hide nested ul By default */
-#navbar ul.inner {
-    display: none;
+    transition: .4s;
 }
 
 #navbar ul.main li:hover {
@@ -77,8 +69,20 @@ body {
     border-radius: 5px;
 }
 
+#navbar ul.main li a {
+    color: var(--text-secondary);
+    text-decoration: none;
+    transition: .4s;
+}
+
 #navbar ul.main li:hover a {
     color: var(--text-primary);
+}
+
+/* Hide nested ul By default */
+#navbar ul.inner {
+    display: none;
+  
 }
 
 /* Nested dropdown Show */
@@ -90,7 +94,7 @@ body {
     width: 200px;
     margin-top: 1rem;
     z-index: 1;
-
+    
 }
 
 
@@ -100,7 +104,7 @@ body {
     border-radius: 5px;
     width: 200px;
     border-bottom: 1px dotted #333;
-
+    transition: .4s;
 }
 
 #navbar ul.main li:hover ul.inner li:hover {
@@ -109,6 +113,7 @@ body {
 
 #navbar ul.main li:hover ul.inner li a {
     color: var(--text-secondary);
+    transition: .4s;
 }
 
 #navbar ul.main li:hover ul.inner li:hover a {
@@ -125,6 +130,7 @@ body {
     font-size: .8rem;
     text-align: center;
     width: 40%;
+    transition: .4s;
 }
 
 #navbar ul.main li:hover ul.inner li:hover span {
